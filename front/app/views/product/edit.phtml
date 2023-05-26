@@ -1,0 +1,21 @@
+<header style="margin-top: 5%;">
+    <div class="row my-3">
+        <h2 class="col-9">Update Product</h2>
+    </div>
+    <form class="row form my-4" action="/product/update?id=<?php echo $data->_id?>" method="post">
+        <div class="col-6">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" name="name" id="name" value=" <?php echo $data->name?> ">
+        </div>
+        <div class="col-6">
+            <label for="type">Type</label>
+            <input class="form-control" type="text" name="type" id="type" value=" <?php echo $data->type?> ">
+        </div>
+        <div class="col-6">
+            <label for="qunatity">Year Of Manufacturing</label>
+            <input class="form-control" type="text" name="year" id="year" value=" <?php echo $data->year?> ">
+        </div>
+        <button type="submit" class="btn btn-primary m-4">Add</button>
+    </form>
+
+</header>

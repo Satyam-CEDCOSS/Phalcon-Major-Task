@@ -1,0 +1,25 @@
+<?php
+require_once APP_PATH.'/views/header.phtml';
+?>
+
+<header>
+    <h2>Order Table</h2>
+    <table class="table table-striped table-hover my-5">
+        <caption>Order Table</caption>
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Zip Code</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Edit</th>
+                <th>Delete</th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            echo $display;
+            ?>
+        </tbody>
+    </table>
+</header>

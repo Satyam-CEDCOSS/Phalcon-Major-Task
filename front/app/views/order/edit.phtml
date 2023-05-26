@@ -1,0 +1,30 @@
+<header style="margin-top: 5%;">
+    <div class="row my-3">
+        <h2 class="col-9">Update Order</h2>
+    </div>
+    <form class="row form my-4" action="/order/update?id=<?php echo $data->_id?>" method="post">
+        <div class="col-6">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" name="name" id="name" value=" <?php echo $data->name?> ">
+        </div>
+        <div class="col-6">
+            <label for="pincode">Pincode</label>
+            <input class="form-control" type="text" name="pincode" id="pincode" value=" <?php echo $data->pincode?> ">
+        </div>
+        <div class="col-6">
+            <label for="product">Product Name</label>
+            <select class="form-control" name="product" id="product" value=" <?php echo $data->product?> ">
+                <?php
+                print_r($result);
+                ?>
+            </select>
+        </div>
+        <div class="col-6">
+            <label for="qunatity">Quantity</label>
+            <input class="form-control" type="text" name="qunatity" id="qunatity"
+             value=" <?php echo $data->qunatity?> ">
+        </div>
+        <button type="submit" class="btn btn-primary col-2 m-3">Add</button>
+    </form>
+
+</header>

@@ -1,0 +1,33 @@
+<?php
+require_once APP_PATH.'/views/header.phtml';
+?>
+
+<header style="margin-top: 5%;">
+    <div class="row my-3">
+        <h2 class="col-9">Add Order</h2>
+    </div>
+    <form class="row form my-4" action="/order/add" method="post">
+        <div class="col-6">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" name="name" id="name">
+        </div>
+        <div class="col-6">
+            <label for="pincode">Pincode</label>
+            <input class="form-control" type="text" name="pincode" id="pincode">
+        </div>
+        <div class="col-6">
+            <label for="product">Product Name</label>
+            <select class="form-control" name="product" id="product">
+                <?php
+                print_r($result);
+                ?>
+            </select>
+        </div>
+        <div class="col-6">
+            <label for="qunatity">Quantity</label>
+            <input class="form-control" type="text" name="qunatity" id="qunatity">
+        </div>
+        <button type="submit" class="btn btn-primary col-2 m-3">Add</button>
+    </form>
+
+</header>

@@ -1,0 +1,25 @@
+<?php
+require_once APP_PATH.'/views/header.phtml';
+?>
+
+<header style="margin-top: 5%;">
+    <div class="row my-3">
+        <h2 class="col-9">Add Product</h2>
+    </div>
+    <form class="row form my-4" action="/product/add" method="post">
+        <div class="col-6">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" name="name" id="name">
+        </div>
+        <div class="col-6">
+            <label for="type">Type</label>
+            <input class="form-control" type="text" name="type" id="type">
+        </div>
+        <div class="col-6">
+            <label for="qunatity">Year Of Manufacturing</label>
+            <input class="form-control" type="number" name="year" id="year">
+        </div>
+        <button type="submit" class="btn btn-primary m-4">Add</button>
+    </form>
+
+</header>
